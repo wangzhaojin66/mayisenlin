@@ -16,10 +16,4 @@
     3. 直接运行 main.py
 
 ## 3. 效果演示
-<video width="600" controls>
-  <source src="video.mp4" type="video/mp4">
-  <!-- 备用文本：浏览器不支持 HTML5 视频时显示 -->
-  你的浏览器不支持 HTML5 视频播放，请点击链接下载视频：<a href="video.mp4">video.mp4</a>
-</video>
-
-
+https://github.com/user-attachments/assets/6cb07b9f-cde9-41e1-b99d-9bf94a4576c4
