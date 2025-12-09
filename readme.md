@@ -15,7 +15,14 @@
     2. 验证环境， 运行test.py，验证是否打开支付宝，然后锁屏
     3. 直接运行 main.py
 
-    
+## 3. 效果演示
+<iframe 
+    height=450 
+    width=800 
+    src="./video.mp4" 
+    frameborder=0 
+    allowfullscreen>
+</iframe>
 
 
 
