@@ -14,7 +14,8 @@ class AntForestAutomation:
     def __init__(self):
         # 连接手机 (如果只连接了一台，可以使用默认连接)
         try:
-            self.d = u2.connect()
+            # self.d = u2.connect("172.16.20.66:5555")  # WIFI 调试
+            self.d = u2.connect()  # USB 调试
             print(f"设备连接成功: {self.d.info.get('marketingName')}")
         except Exception as e:
             print(f"连接失败，请检查USB调试是否打开: {e}")
@@ -33,6 +34,9 @@ class AntForestAutomation:
 
     def wake_and_unlock(self):
         """点亮屏幕并解锁"""
+        if self.d.info['screenOn']:
+            print("屏幕已解锁, 无需唤醒...")
+            return
         print("正在唤醒屏幕...")
         self.d.screen_on()  # 点亮屏幕
         time.sleep(1)
@@ -125,7 +129,7 @@ class AntForestAutomation:
             if find_energy_btn:
                 print(f"点击 '找能量' 跳转第 {count} 好友...")
                 self.d.click(find_energy_btn[0], find_energy_btn[1])
-                time.sleep(0.5)  # 等待进入好友页面
+                time.sleep(1)  # 等待进入好友页面
 
                 # 检查是否有“一键收” (通常是背包道具) 或者直接点击能量球
                 # 这里响应你的需求：点击“一键收”
