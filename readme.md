@@ -16,13 +16,10 @@
     3. 直接运行 main.py
 
 ## 3. 效果演示
-<iframe 
-    height=450 
-    width=800 
-    src="./video.mp4" 
-    frameborder=0 
-    allowfullscreen>
-</iframe>
-
+<video width="600" controls>
+  <source src="video.mp4" type="video/mp4">
+  <!-- 备用文本：浏览器不支持 HTML5 视频时显示 -->
+  你的浏览器不支持 HTML5 视频播放，请点击链接下载视频：<a href="video.mp4">video.mp4</a>
+</video>
 
 
